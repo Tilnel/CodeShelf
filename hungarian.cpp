@@ -19,7 +19,7 @@ struct Hungarian {
     }
 
     bool Dfs(int x) {
-        for (int i = 1; i <= m; i++) {
+        for (int i = 1; i <= n; i++) {
             if (graph[x][i] && !vis[i]) {
                 vis[i] = true;
                 if (lnk[i] == 0 || Dfs(lnk[i])) {
